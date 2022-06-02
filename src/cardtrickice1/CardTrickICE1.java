@@ -27,10 +27,11 @@ public class CardTrickICE1 {
             //use a method to generate random *13
             Random rand = new Random();
             c1.setValue(rand.nextInt(13) + 1);
-            c1.setSuits("hearts");//random method suit 
+            c1.setSuits(Card.SUITS[rand.nextInt(4)]);//random method suit
             magicHand[i] = c1;
             System.out.println(c1.getValue() + " of " + c1.getSuits());
         }
+        
         //step 2:take input 
         Scanner s = new Scanner(System.in);
         System.out.println("\n1 - Hearts \n2 - Diamonds \n"
