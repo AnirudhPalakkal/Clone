@@ -32,6 +32,10 @@ public class CardTrickICE1 {
             System.out.println(c1.getValue() + " of " + c1.getSuits());
         }
         
+        Card luckyCard = new Card();
+        luckyCard.setSuit("hearts");
+        luckyCard.setValue(4);
+        
         //step 2:take input 
         Scanner s = new Scanner(System.in);
         System.out.println("\n1 - Hearts \n2 - Diamonds \n"
